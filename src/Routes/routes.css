@@ -1,0 +1,22 @@
+.nav {
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+}
+
+.nav li {
+  margin: 10px;
+}
+
+.nav li a {
+  color: #ffff;
+  text-decoration: none;
+}
+
+.nav li a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  width: 100%;
+}

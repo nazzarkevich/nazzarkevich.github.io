@@ -1,0 +1,15 @@
+.card-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+
+.spinner {
+  text-align: center;
+}
+
+.venues-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
