@@ -5,7 +5,7 @@
 
 ## Project with React DnD Library
 
-#### Try the live version of the game: https://nazzarkevich.github.io/
+#### Try the live version of the game: https://nazzarkevich.github.io/venue-dnd
 
 ### What is it ❓
 **Drag and Drop project** is a *DnD library study project* in which you can search best venues in all over the world. Just type city name and drag it to your favorites list.

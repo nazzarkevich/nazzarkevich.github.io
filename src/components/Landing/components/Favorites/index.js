@@ -4,8 +4,6 @@ import { connect } from 'react-redux';
 import { addFavorite, removeFavorite } from '../../../../redux/actions/favorites.a';
 
 const mapStateToProps = state => {
-  console.log('REDUX STATE**', state);
-
   return {
     favorites: state.favoriteList.favorites,
   }

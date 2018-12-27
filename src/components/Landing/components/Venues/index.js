@@ -4,8 +4,6 @@ import { fetchAllVenues, removeVenue } from '../../../../redux/actions/venue.a';
 import { addFavorite } from '../../../../redux/actions/favorites.a';
 
 const mapStateToProps = state => {
-  console.log('REDUX STATE', state);
-
   return {
     venues: state.venueList.venues,
     fetching: state.venueList.fetching
