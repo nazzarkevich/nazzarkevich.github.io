@@ -1,0 +1,22 @@
+.search-wrapper {
+  display: inline-flex;
+  margin: 0 10px 10px 10px;
+}
+
+input {
+  outline: none;
+  font-size: 15px;
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+}
+
+.search-button {
+  font-size: 13px;
+  outline: none;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-bottom-left-radius: 1px;
+  border-top-left-radius: 1px;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+}

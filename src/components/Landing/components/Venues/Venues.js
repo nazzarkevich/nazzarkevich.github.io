@@ -21,11 +21,19 @@ class Venues extends Component {
     const { searchWord } = this.state;
     const { onFetchVenues } = this.props;
 
-    onFetchVenues(searchWord);
+    if (searchWord) {
+      onFetchVenues(searchWord);
+    }
+  }
+
+  handleDrop = name => {
+    const { onRemoveVenue } = this.props;
+
+    onRemoveVenue(name);
   }
 
   render() {
-    const { venues, searchWord, fetching } = this.props;
+    const { venues, searchWord, fetching, onAddFavorite } = this.props;
 
     return (
       <VenueView
@@ -34,6 +42,8 @@ class Venues extends Component {
         searchWord={searchWord}
         handleClick={this.handleClick}
         handleInputChange={this.handleInputChange}
+        handleDrop={this.handleDrop}
+        onAddFavorite={onAddFavorite}
       />
     )
   }

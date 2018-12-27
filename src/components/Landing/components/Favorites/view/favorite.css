@@ -1,0 +1,28 @@
+.favorite-item {
+  color: #fff;
+  text-align: center;
+  border: 1px solid gold;
+}
+
+.favorite-wrapper {
+  text-align: center;
+}
+
+.favorite-venues {
+  color: gold;
+}
+
+.delete-icon {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+  font-size: 6px;
+}
+
+h4 {
+  margin-top: 0;
+}
+
+.icon {
+  cursor: pointer;
+}

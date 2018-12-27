@@ -9,7 +9,7 @@ const Navigation = () => (
   <div>
     <ul className="nav">
       <li> <Link to={ROUTES.LANDING}>Venues search</Link> </li>
-      <li> <Link to={ROUTES.SIGN_UP}>Sign Up</Link> </li>
+      <li> <Link to={ROUTES.FAVORITES}>Favorites</Link> </li>
     </ul>
   </div>
 );

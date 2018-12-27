@@ -1,3 +1,11 @@
 import Landing from './Landing';
 
-export default Landing;
+import { connect } from 'react-redux';
+
+const mapStateToProps = state => {
+  return {
+    fetching: state.venueList.fetching
+  }
+};
+
+export default connect(mapStateToProps)(Landing);

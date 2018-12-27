@@ -4,12 +4,33 @@
   grid-gap: 10px;
 }
 
+.venues {
+  margin: 50px;
+  width: 100%;
+}
+
 .spinner {
   text-align: center;
 }
 
 .venues-wrapper {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  margin: 10px;
+}
+
+.spinner-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.search-header {
+  margin: 0 0 10px 10px;
+  font-weight: 500;
+}
+
+.search-venues {
+  text-align: center;
+  color: gold;
 }

@@ -1,0 +1,7 @@
+.target {
+  width: 80px;
+  height: 150px;
+  text-align: center;
+  border: 1px dashed gold;
+  padding: 5px;
+}

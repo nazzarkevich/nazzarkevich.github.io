@@ -1,4 +1,14 @@
-import { FETCH_VENUES, FETCH_VENUES_SUCCESS, FETCH_VENUES_FAILURE } from './venue.ct';
+import {
+  FETCH_VENUES,
+  REMOVE_VENUE,
+  FETCH_VENUES_SUCCESS,
+  FETCH_VENUES_FAILURE
+} from './venue.ct';
+
+export const removeVenue = name => ({
+  type: REMOVE_VENUE,
+  payload: { name }
+});
 
 export const fetchVenues = () => ({
   type: FETCH_VENUES
@@ -20,5 +30,6 @@ export const fetchAllVenues = city => dispatch => {
   const url = `https://api.foursquare.com/v2/venues/explore?near=${city}&section=food&client_id=${process.env.REACT_APP_FORSQ_CLIENT_ID}&client_secret=${process.env.REACT_APP_FORSQ_CLIENT_SECRET}&v=20181018`;
   fetch(url)
     .then(res => res.json())
-    .then(data => dispatch(fetchVenuesSuccess(data.response.groups[0].items)));
+    .then(data => dispatch(fetchVenuesSuccess(data.response.groups[0].items)))
+    .catch(error => console.log(error));
 }

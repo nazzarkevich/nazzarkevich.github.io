@@ -1,23 +1,28 @@
 import React from 'react';
-import Spinner from '../../Spinner';
+
 import Card from '../../Card';
 import Search from '../../Search';
 
 import './venue.css';
 
 const Venue = props => {
-  const { searchWord, venues, handleInputChange, handleClick, fetching } = props;
+  const {
+    venues,
+    handleDrop,
+    searchWord,
+    handleClick,
+    onAddFavorite,
+    handleInputChange
+  } = props;
 
   return (
-    <div>
+    <div className="venues">
+      <p className="search-header">Search by city name:</p>
       <Search searchWord={searchWord} handleInputChange={handleInputChange} handleClick={handleClick} />
 
-      <h3>Venues:</h3>
-
       <div className="card-wrapper">
-        <Spinner fetching={fetching} className="spinner" />
         {venues && venues.map((item, i) => {
-          return <Card key={i} name={item.venue.name} />
+          return <Card key={i} venue={item.venue} handleDrop={handleDrop} addFavorite={onAddFavorite} />
         })}
       </div>
     </div>

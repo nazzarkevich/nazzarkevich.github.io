@@ -1,12 +1,25 @@
-import { FETCH_VENUES, FETCH_VENUES_SUCCESS, FETCH_VENUES_FAILURE } from '../actions/venue.ct';
+import {
+  FETCH_VENUES,
+  REMOVE_VENUE,
+  FETCH_VENUES_SUCCESS,
+  FETCH_VENUES_FAILURE
+} from '../actions/venue.ct';
 
 const initialState = {
   venues: [],
   fetching: false
 }
 
-const venues = (state = initialState, action) => {
+const venueList = (state = initialState, action) => {
   switch (action.type) {
+    case REMOVE_VENUE:
+      const venues = state.venues.filter(item => item.venue.name !== action.payload.name);
+
+      return {
+        venues,
+        fetching: false
+      }
+
     case FETCH_VENUES:
       return {
         ...state,
@@ -32,4 +45,4 @@ const venues = (state = initialState, action) => {
   }
 }
 
-export default venues;
+export default venueList;
