@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/venue-dnd/precache-manifest.04509bb99529660208e4f0a8ff426a0a.js"
+  "/venue-dnd/precache-manifest.82bb0f80136607792f3a7d4fd3cd69e0.js"
 );
 
 workbox.clientsClaim();
